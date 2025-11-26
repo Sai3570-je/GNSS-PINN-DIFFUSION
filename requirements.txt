@@ -1,0 +1,28 @@
+# Core dependencies for GNSS Error Prediction Project
+# Install with: pip install -r requirements.txt
+
+# Data Processing
+numpy<2                     # Array operations (must be <2.0 for TensorFlow compatibility)
+pandas>=1.5.0              # Data manipulation and CSV handling
+requests>=2.28.0           # HTTP library for downloading RINEX files
+
+# GNSS Data Processing
+georinex>=1.16.0           # RINEX file parsing
+unlzw3>=0.2.1              # Decompression utility for RINEX files
+
+# Machine Learning - Deep Learning
+tensorflow>=2.13.0         # Deep learning framework
+keras>=2.13.0              # High-level neural network API
+scikit-learn>=1.2.0        # Machine learning utilities (train_test_split, StandardScaler, metrics)
+
+# Machine Learning - Gradient Boosting
+xgboost>=1.7.0             # Gradient boosting framework for baseline models
+lightgbm>=3.3.0            # Fast gradient boosting (optional alternative)
+
+# Visualization
+matplotlib>=3.5.0          # Plotting and visualization
+seaborn>=0.12.0            # Statistical data visualization
+
+# Optional: Data Analysis
+jupyter>=1.0.0             # For running notebooks (optional)
+notebook>=6.4.0            # Jupyter notebook interface (optional)
